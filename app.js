@@ -12,7 +12,7 @@ function renderTodoList() {
 
   // Create and append list items for each todo item
   todos.forEach((todo, index) => {
-    const listItem = document.createElement('li');
+  const listItem = document.createElement('li');
     listItem.innerHTML = `
       <input type="checkbox" id="checkbox_${index}" ${todo.completed ? 'checked' : ''}>
       <span class="${todo.completed ? 'completed' : ''}">${todo.text}</span>
